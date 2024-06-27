@@ -9,7 +9,7 @@ module.exports = {
   // Adicionar aqui em caso de code splitting
   // https://webpack.js.org/guides/code-splitting/
   entry: {
-    main: ["./src/js/main.js", "./src/scss/style.scss"],
+    main: ["./src/js/main.ts", "./src/scss/style.scss"],
   },
   output: {
     filename: "./js/[name].js",
@@ -27,22 +27,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: "/.js$/i",
+        test: /\.ts$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              [
-                "@babel/preset-env",
-                {
-                  targets: {
-                    browsers: ["last 2 versions", "ie 11"],
-                  },
-                },
-              ],
-            ],
-          },
+          loader: "ts-loader",
         },
       },
 
@@ -70,6 +58,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js'],
   },
   plugins: [
     new MiniCssExtractPlugin({
