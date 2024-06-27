@@ -76,12 +76,5 @@ module.exports = {
       filename: "./css/style.css",
     }),
     new CleanWebpackPlugin(),
-    //     new BrowserSyncPluging({
-    //         name: process.env.PROJECT_NAME || 'Browsesync',
-    //         open: false,
-    //         files: '**/*.php',
-    //         injectChanges: true,
-    //         proxy: process.env.PROXY,
-    //     }),
   ],
 };
