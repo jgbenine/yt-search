@@ -11,28 +11,19 @@
 
 // Colors
 @import './utils/colors';
+
 // Mixins
 @import './utils/mixins';
 
-/* Animations */
-
-@import './utils/animations';
-
 /* Variables */
-
 @import './utils/variables';
 
 /* Typography */
-
 @import './base/typography';
 
 /* Defaults */
-
 @import './base/defaults';
 
-/* Common */
-
-@import './utils/common';
 
 /*
 *       ██████╗ ██████╗ ███╗   ███╗██████╗  ██████╗ ███╗   ██╗███████╗███╗   ██╗████████╗███████╗
@@ -45,11 +36,9 @@
 
 
 /* Header */
-
 @import './components/header';
 
 /* Footer */
-
 @import './components/footer';
 
 /*
@@ -64,7 +53,5 @@
 *
 */
 
-
 /* Home */
-
 @import './pages/home';
