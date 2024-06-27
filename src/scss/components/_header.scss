@@ -1,0 +1,31 @@
+.header{
+  color: $white;
+  padding-bottom: 15px;
+  &__menu{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    height: 40px;
+    width: 40px;
+  }
+
+  &__logo-img{
+    width: 100%;
+    height: 100%;
+    color: $red;
+  }
+
+  &__menu-intro{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__btn-nav{
+    cursor: pointer;
+    .fa-bars{
+      font-size: 20px;
+    }
+  }
+}

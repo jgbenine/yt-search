@@ -2,10 +2,44 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/dist/css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
 
   <body>
-    
+    <header class="header">
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <div class="header__menu-intro">
+            <button class="header__btn-nav" aria-label="menu">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <a class="header__menu-link" title="Home YT-search" href="/">
+              <div class="header__logo">
+                <img
+                  src="./src/assets/images/logo.svg"
+                  alt="logo toutube"
+                  class="header__logo-img"
+                />
+              </div>
+            </a>
+          </div>
+        </li>
+        <div class="search">
+          <input type="text" class="search__input" placeholder="Pesquisar" />
+          <button class="search__button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <li class="header__menu-item">
+          <a class="header__menu-link">Login</a>
+        </li>
+      </ul>
+    </header>
     <script src="/dist/js/main.js"></script>
   </body>
 </html>
