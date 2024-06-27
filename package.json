@@ -1,0 +1,24 @@
+{
+    "name": "yt-seach",
+    "version": "1.0.0",
+    "description": "Youtube videos",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --config webpack.prod.config.js",
+        "start": "webpack --config webpack.dev.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "JG",
+    "license": "ISC",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "devDependencies": {
+   
+    }
+}
