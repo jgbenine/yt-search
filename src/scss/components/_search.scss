@@ -3,6 +3,8 @@
   max-width: 534px;
   display: flex;
   border-radius: 40px 0px 0px 40px;
+  max-height: 40px;
+  min-height: 40px;
   &__input {
     width: 100%;
     border: unset;
@@ -12,6 +14,7 @@
     color: $white;
     border: 1px solid $blackMozart;
     font-family: $main-font;
+    letter-spacing: 0.3px ;
     &:focus {
       outline: none;
       border: 1px solid $grayDefault;
@@ -21,7 +24,9 @@
     width: 60px;
     border-radius: 0px 40px 40px 0px;
     background-color: rgba(255, 255, 255, 0.08);
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .fa-magnifying-glass {
       font-size: 15px;
     }

@@ -1,0 +1,42 @@
+.sidebar{
+  width: 100%;
+  max-width: 216px;
+  min-width: 216px;
+  color: $white;
+  height: 100%;
+  display: none;
+  &--active{
+    display: block;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item{
+    border-radius: 10px;
+    margin-bottom: 5px;
+    &--active{
+      background: $blackMozart; 
+    }
+    &:hover{
+      background: $blackMozart; 
+    }
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0 14px 10px;
+  }
+
+  &__icon{
+    font-size: 15px;
+  }
+
+  &__label{
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
