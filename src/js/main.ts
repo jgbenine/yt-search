@@ -1,3 +1,7 @@
-import { helloWorld } from './modules/helloWorld';
+import { Sidebar } from "./modules/sidebar";
+import { GetVideos } from "./modules/api/videos/getVideos";
+import { Search } from "./modules/search";
 
-console.log(helloWorld());
+GetVideos();
+Sidebar();
+Search();
