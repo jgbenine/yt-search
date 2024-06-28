@@ -1,9 +1,10 @@
 export type VideosType = {
+  id: string;
   url: string;
   title: string;
   thumbnail: string;
   chanelTitle: string;
-  views: number;
+  views: string;
 }
 
 export type YouTubeVideoItem = {
