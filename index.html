@@ -48,23 +48,45 @@
       </ul>
     </header>
 
-    <nav class="sidebar">
-      <ul class="sidebar__list">
-        <li class="sidebar__item">
-          <a href="/" class="sidebar__link">
-            <i class="fa-solid fa-video sidebar__icon"></i>
-            <span class="sidebar__label">Videos</span>
-          </a>
-        </li>
-        <li class="sidebar__item">
-          <a href="/" class="sidebar__link">
-            <i class="fa-solid fa-star sidebar__icon"></i>
-            <span class="sidebar__label">Favoritos</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    
+    <main class="main">
+      <nav class="sidebar sidebar--active">
+        <ul class="sidebar__list">
+          <li class="sidebar__item sidebar__item--active">
+            <a href="/" class="sidebar__link">
+              <i class="fa-solid fa-video sidebar__icon"></i>
+              <span class="sidebar__label">Videos</span>
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a href="/favorites.html" class="sidebar__link">
+              <i class="fa-solid fa-star sidebar__icon"></i>
+              <span class="sidebar__label">Favoritos</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1 class="content__title">Vídeos populares no Brasil</h1>
+        <div class="content__grid"></div>
+      </div>
+    </main>
+
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <iframe
+          class="modal__iframe"
+          width="100%"
+          height="100%"
+          src=""
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
     <script src="/dist/js/main.js"></script>
   </body>
 </html>

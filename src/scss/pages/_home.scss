@@ -1,4 +1,18 @@
-body {
-    background: $primary;
-    font-size: 20px;
+.main {
+    display: flex;
+}
+
+.content {
+    margin-left: 40px;
+    &__title {
+        font-size: 32px;
+        color: $white;
+    }
+    &__grid {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 60px;
+    }
 }

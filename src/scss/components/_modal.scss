@@ -1,0 +1,36 @@
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &--active{
+    display: flex;
+  }
+
+  &__content {
+    max-width: 600px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+  }
+
+  &__close {
+    position: absolute;
+    right: -18px;
+    top: -20px;
+    height: 40px;
+    width: 40px;
+    svg {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+}
