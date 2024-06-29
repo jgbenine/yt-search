@@ -1,6 +1,7 @@
 .card-video {
   max-width: 380px;
   width: 100%;
+  position: relative;
   &:hover {
     img {
       transform: scale(1.05);
@@ -11,7 +12,6 @@
   &__item {
     width: 100%;
     cursor: pointer;
-    // max-width: 400px;
   }
 
   &__wrapperImg {
@@ -50,10 +50,24 @@
     border-radius: 4px;
     margin-top: 2px;
   }
-
   &__views{
     color: $secondary;
     font-size: 13px;
     margin-top: 2px;
+  }
+
+  &__favorite{
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    z-index: 9;
+    height: 40px;
+    width: 40px;
+  }
+  &__icon{
+    color: rgba(255, 255, 255, 0.5);
+    &--active{
+      color: yellow;
+    }
   }
 }
