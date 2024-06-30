@@ -3,6 +3,8 @@ import { GetVideosBySearch } from "./api/videos/searchVideos";
 export function Search(){
   const inputValue = document.querySelector('.search__input') as HTMLInputElement;
   const btnSearch = document.querySelector('.search__button') as HTMLButtonElement;
+  
+  if(!inputValue) return;
 
   btnSearch.addEventListener('click', () => {
     const searchQuery = inputValue.value.trim();

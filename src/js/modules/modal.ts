@@ -1,7 +1,7 @@
 export function Modal(url: string, videoElement: HTMLUListElement) {
   const modal = document.querySelector(".modal");
   const iframe = modal.querySelector(".modal__iframe") as HTMLIFrameElement;
-  const closeModal = modal.querySelector(".modal__close");
+  const closeModal = modal.querySelector(".modal__close") as HTMLButtonElement;
 
   closeModal.addEventListener("click", () => {
     modal.classList.remove("modal--active");

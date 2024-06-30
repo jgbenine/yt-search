@@ -1,5 +1,5 @@
 export type VideosType = {
-  id: string;
+  id?: string;
   url: string;
   title: string;
   thumbnail: string;
@@ -8,7 +8,9 @@ export type VideosType = {
 }
 
 export type YouTubeVideoItem = {
-  id: string;
+  id: {
+    videoId: string;
+  };
   snippet: {
     title: string;
     thumbnails: {

@@ -13,10 +13,10 @@ export async function GetVideosBySearch(query: string) {
         regionCode: "BR",
       },
     });
-    const videos: VideosType[] = response.data.items.map((item: any) => ({
+    const videos: VideosType[] = response.data.items.map((item: YouTubeVideoItem) => ({
       url: `https://www.youtube.com/watch?v=${item.id.videoId}`,
       title: item.snippet.title,
-      thumbnail: item.snippet.thumbnails.high.url,
+      thumbnail: item.snippet.thumbnails.standard.url,
       chanelTitle: item.snippet.channelTitle,
       views: 0,
     }));
