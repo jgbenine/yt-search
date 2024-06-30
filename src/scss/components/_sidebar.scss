@@ -1,42 +1,68 @@
-.sidebar{
-  width: 100%;
-  max-width: 216px;
-  min-width: 216px;
+.sidebar {
   color: $white;
   height: 100%;
-  display: none;
-  &--active{
-    display: block;
-  }
-
-  &__list{
+  max-width: 100%;
+  &__list {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    height: 100vh;
+    width: 100%;
   }
 
-  &__item{
+  &__item {
     border-radius: 10px;
-    margin-bottom: 5px;
-    &--active{
-      background: $blackMozart; 
+    // margin-bottom: 5px;
+    &--active {
+      background: $blackMozart;
     }
-    &:hover{
-      background: $blackMozart; 
+    &:hover {
+      background: $blackMozart;
+    }
+
+    &--favorites {
+      position: relative;
     }
   }
-  &__link{
+  &__link {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 14px 0 14px 10px;
+    padding: 14px;
+    height: 20px;
   }
 
-  &__icon{
+  &__icon {
     font-size: 15px;
   }
 
-  &__label{
-    font-size: 15px;
+  &__label {
+    display: none;
+    align-items: center;
+    font-size: 14px;
     font-weight: 400;
+    width: 100%;
+    min-width: 160px;
+    cursor: pointer;
+    &--active {
+      display: flex;
+    }
+  }
+
+  &__count {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $white;
+    background: $red;
+    position: absolute;
+    left: -6px;
+    bottom: -5px;
+    z-index: 1;
+    padding: 4px;
+    width: 5px;
+    height: 5px;
   }
 }

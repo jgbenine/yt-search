@@ -8,9 +8,7 @@ export type VideosType = {
 }
 
 export type YouTubeVideoItem = {
-  id: {
-    videoId: string;
-  };
+  id: string;
   snippet: {
     title: string;
     thumbnails: {
