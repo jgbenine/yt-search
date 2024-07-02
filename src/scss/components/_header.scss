@@ -1,6 +1,10 @@
 .header{
   color: $white;
-  padding-bottom: 15px;
+  background: $primary;
+  padding: 5px 0 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   &__menu{
     display: flex;
     align-items: center;
@@ -24,15 +28,19 @@
     gap: 5px;
   }
   &__btn-nav{
+    display: none;
+    @media screen and (min-width: $md){
+      display: flex;
+    }
     .fa-bars{
       font-size: 20px;
     }
   }
 
   &__menu-perfil{
-    height: 40px;
-    width: 40px;
-    border: 1px solid $secondary;
+    height: 30px;
+    width: 30px;
+    border: 2px solid $secondary;
     border-radius: 50%;
     display: flex;
     align-items: center;

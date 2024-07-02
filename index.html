@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | YT-Search</title>
     <link rel="stylesheet" href="/dist/css/style.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
@@ -15,7 +18,7 @@
       <ul class="header__menu">
         <li class="header__menu-item">
           <div class="header__menu-intro">
-            <button class="header__btn-nav" aria-label="menu">
+            <button class="header__btn-nav" aria-label="menu" name="menu">
               <i class="fa-solid fa-bars"></i>
             </button>
             <a class="header__menu-link" title="Home YT-search" href="/">
@@ -29,14 +32,14 @@
             </a>
           </div>
         </li>
-        <div class="search">
+        <li class="search">
           <input type="text" class="search__input" placeholder="Pesquisar" />
-          <button class="search__button">
+          <button class="search__button" name="pesquisar" aria-label="pesquisar" >
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-        </div>
+        </li>
         <li class="header__menu-item">
-          <button class="header__menu-link">
+          <button class="header__menu-link" name="perfil" aria-label="perfil">
             <div class="header__menu-perfil">
               <i class="fa-solid fa-user"></i>
             </div>
@@ -73,7 +76,7 @@
 
     <div class="modal">
       <div class="modal__content">
-        <button class="modal__close">
+        <button class="modal__close" aria-label="fechar" name="fechar modal">
           <i class="fa-solid fa-times"></i>
         </button>
         <iframe

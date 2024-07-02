@@ -5,6 +5,8 @@
 
 body{
   background: $primary;
+  margin-top: unset;
+  overflow-x: hidden;
 }
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, p {
@@ -14,7 +16,6 @@ ul, ol, li, h1, h2, h3, h4, h5, h6, p {
   padding-inline-end: 0;
   margin-bottom: 0;
 }
-
 
 a {
   color: unset;
@@ -31,6 +32,8 @@ button {
   color: inherit;
   font-weight: inherit;
   text-transform: inherit;
+  padding: unset;
+  cursor: pointer;
 }
 
 
@@ -42,7 +45,18 @@ ul, li{
   list-style: none;
 }
 
-button{
-  cursor: pointer;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+::-webkit-scrollbar-track {
+  background: $blackMozart; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: $secondary; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $white; 
+}

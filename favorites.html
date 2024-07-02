@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos | YT-Search</title>
     <link rel="stylesheet" href="/dist/css/style.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
@@ -15,7 +18,7 @@
       <ul class="header__menu">
         <li class="header__menu-item">
           <div class="header__menu-intro">
-            <button class="header__btn-nav" aria-label="menu">
+            <button class="header__btn-nav" aria-label="menu" name="menu">
               <i class="fa-solid fa-bars"></i>
             </button>
             <a class="header__menu-link" title="Home YT-search" href="/">
@@ -30,7 +33,7 @@
           </div>
         </li>
         <li class="header__menu-item">
-          <button class="header__menu-link">
+          <button class="header__menu-link" aria-label="perfil" name="perfil">
             <div class="header__menu-perfil">
               <i class="fa-solid fa-user"></i>
             </div>
@@ -45,7 +48,9 @@
           <li class="sidebar__item">
             <a href="/" class="sidebar__link">
               <i class="fa-solid fa-video sidebar__icon"></i>
-              <label class="sidebar__label sidebar__label--active">Videos</label>
+              <label class="sidebar__label sidebar__label--active"
+                >Videos</label
+              >
             </a>
           </li>
           <li class="sidebar__item sidebar__item--active">
@@ -54,20 +59,24 @@
                 <i class="fa-solid fa-star sidebar__icon"></i>
                 <span class="sidebar__count"></span>
               </div>
-              <label class="sidebar__label sidebar__label--active">Favoritos</label>
+              <label class="sidebar__label sidebar__label--active"
+                >Favoritos</label
+              >
             </a>
           </li>
         </ul>
       </nav>
       <div class="content">
-        <h1 class="content__title">Vídeos populares no Brasil</h1>
-        <div class="content__grid"></div>
+        <h1 class="content__title">Vídeos que você favoritou</h1>
+        <p class="favorite__menssage">Favorite algum vídeo para que ele apareça aqui.</p>
+        <div class="content__grid content__grid--favorites">
+        </div>
       </div>
     </main>
 
     <div class="modal">
       <div class="modal__content">
-        <button class="modal__close">
+        <button class="modal__close" aria-label="fechar" name="fechar modal">
           <i class="fa-solid fa-times"></i>
         </button>
         <iframe
