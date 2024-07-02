@@ -1,4 +1,4 @@
-import { VideosType } from "../../../@types/videos";
+import { VideosType } from "../../../../@types/videos";
 
 export function isFavorite(url: string): boolean {
   const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");

@@ -1,9 +1,9 @@
-import { VideosType } from "../../@types/videos";
+import { VideosType } from "../../../@types/videos";
 import { handleFavoriteClick } from "./favorites/handleFavorites";
 import { isFavorite } from "./favorites/isFavorites";
 import { Modal } from "./modal";
 
-export function displayVideos(videos: VideosType[]) {
+export function createDisplayVideos(videos: VideosType[]) {
   const container = document.querySelector(".content__grid");
   container.innerHTML = "";
 
@@ -23,8 +23,7 @@ export function displayVideos(videos: VideosType[]) {
             <i class="fa-solid fa-star card-video__icon ${isFavorite(video.url) ? 'card-video__icon--active' : ''}"></i>
           </button>
         </article>
-      </li> 
-    `;
+      </li>`;
     
     const favoriteButton = videoElement.querySelector(".card-video__favorite") as HTMLButtonElement;
     favoriteButton.addEventListener("click", (event) => {

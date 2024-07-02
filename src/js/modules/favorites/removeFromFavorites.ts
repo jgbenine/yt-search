@@ -1,4 +1,4 @@
-import { VideosType } from "../../../@types/videos";
+import { VideosType } from "../../../../@types/videos";
 
 export function removeFromFavorites(url: string) {
   let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");

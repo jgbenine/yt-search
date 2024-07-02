@@ -1,4 +1,5 @@
-import { GetVideosBySearch } from "./api/videos/searchVideos";
+import { GetVideosSearchApi } from "./api/videos/getVideosSearchApi";
+
 
 export function Search(){
   const inputValue = document.querySelector('.search__input') as HTMLInputElement;
@@ -10,7 +11,7 @@ export function Search(){
   function searchVideos() {
     const searchQuery = inputValue.value.trim();
     if (searchQuery) {
-      GetVideosBySearch(searchQuery);
+      GetVideosSearchApi(searchQuery);
       titlePesquisa.innerText = `Videos: ${searchQuery}`;
     } else {
       console.log('Erro ao buscar videos.');

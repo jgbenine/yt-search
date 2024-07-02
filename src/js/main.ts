@@ -1,7 +1,7 @@
 import { Sidebar } from "./modules/sidebar";
 import { Search } from "./modules/search";
-import { LoadData } from "./modules/loadData";
+import { LoadData } from "./modules/api/loadData";
 
-Sidebar();
 LoadData();
 Search();
+Sidebar();
