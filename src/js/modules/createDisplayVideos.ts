@@ -19,10 +19,10 @@ export function displayVideos(videos: VideosType[]) {
           <h2 class="card-video__title">${video.title}</h2>
           <p class="card-video__chanel">${video.chanelTitle}</p>
           <span class="card-video__views">${video.views.toLocaleString()} views</span>
+          <button class="card-video__favorite" aria-label="favoritar" name="favoritar">
+            <i class="fa-solid fa-star card-video__icon ${isFavorite(video.url) ? 'card-video__icon--active' : ''}"></i>
+          </button>
         </article>
-        <button class="card-video__favorite">
-          <i class="fa-solid fa-star card-video__icon ${isFavorite(video.url) ? 'card-video__icon--active' : ''}"></i>
-        </button>
       </li> 
     `;
     
