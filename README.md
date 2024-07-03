@@ -1,16 +1,40 @@
 
 # YT-Search
+Atualmente consome a API do youtube e mostra videos populares de região,
+no caso Brasil.
 
-Projeto com html, sass, js. 
-</br>
 
-## Executando Projeto
+#### Executando Projeto
 
-Execute esses comandos no terminal:
+<b>Back-end</b>
 
-</br>
-
-1 - instalar dependências:
+1 - Acesse a pasta <b>/server</b> e instale as dependencias 
 ```bash
 npm install
 ```
+
+2 - inicie e o servidor
+```bash
+npm run dev
+```
+
+<b>Front-end</b>
+
+1 - Acesse o dirtetorio root do projeto e instale as dependencias
+```bash
+npm install
+```
+
+2 - Inicie o front end
+
+```bash
+ http-server
+```
+
+3 - Acesse o front-end no ip disponibilizado no terminal abaixo de <i> Available on</i>
+
+
+
+
+</br>
+
