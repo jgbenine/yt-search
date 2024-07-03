@@ -18,6 +18,8 @@ npm install
 npm run dev
 ```
 
+3 - Adicione um arquivo .env com sua API KEY do youtube dentro da pasta /server, você pode visualizar exemplo de como deve ser dentro do arquivo .env.exemple
+
 <b>Front-end</b>
 
 1 - Acesse o dirtetorio root do projeto e instale as dependencias
